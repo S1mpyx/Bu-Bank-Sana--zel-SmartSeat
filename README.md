@@ -11,7 +11,7 @@
 * **Mikrodenetleyici:** Arduino Uno
 * **Kimlik Doğrulama:** MFRC522 RFID Okuyucu (13.56 MHz, SPI)
 * **Çalıştırma Mekanizması:** Mikro Servo Motor (prototip ölçeği)
-* **Güç Kaynağı:** Filtrelenmiş ve kararlı DC besleme
+* **Güç Kaynağı:** Arduino USB bağlantısı (5 V DC)
 * **3D Tasarım:** Blender
 
 ### Çalışma Prensibi
@@ -104,6 +104,7 @@ Yiğit Dağlı
 * Разработка системы
 * Встроенное программное обеспечение
 * Интеграция оборудования
+* Питание: USB-питание от Arduino (5 В DC)
 * 3D-моделирование
 
 **Участник проекта**
