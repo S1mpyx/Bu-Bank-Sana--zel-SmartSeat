@@ -1,95 +1,114 @@
-English
-Project Overview
+# BU BANK SANA ÖZEL
 
-BU BANK SANA ÖZEL is an embedded systems prototype functioning as an intelligent public seating system. It provides priority-based access control using RFID authentication and mechanical actuation within a smart city concept.
+## 🇹🇷 Türkçe
 
-System Architecture
-Microcontroller: Arduino Uno
-Authentication: MFRC522 RFID Reader (13.56 MHz, SPI)
-Actuation: Micro Servo Motor (prototype scale)
-Power: Stabilized DC supply with filtering capacitors
-Structure: Designed and simulated in Blender
-Working Principle
+### Proje Özeti
 
-RFID card is scanned → UID is read → Arduino verifies access → if authorized servo activates mechanical lock → otherwise system remains locked
+**BU BANK SANA ÖZEL**, RFID tabanlı kimlik doğrulama ile çalışan ve akıllı şehir konsepti kapsamında dezavantajlı bireyler için ayrılmış oturma alanlarına öncelikli erişim sağlayan bir gömülü sistem prototipidir.
 
-Embedded Software
+### Sistem Mimarisi
 
-Developed in embedded C/C++. Features RFID UID verification, SPI communication, PWM servo control, noise filtering, and power stability management.
+* **Mikrodenetleyici:** Arduino Uno
+* **Kimlik Doğrulama:** MFRC522 RFID Okuyucu (13.56 MHz, SPI)
+* **Çalıştırma Mekanizması:** Mikro Servo Motor (prototip ölçeği)
+* **Güç Kaynağı:** Filtrelenmiş ve kararlı DC besleme
+* **3D Tasarım:** Blender
 
-Challenges
+### Çalışma Prensibi
 
-Servo activation caused voltage drops and instability. This was solved by improving power distribution, adding capacitors, and optimizing firmware timing.
+1. RFID kart okutulur.
+2. Kartın UID bilgisi okunur.
+3. Arduino UID'yi doğrular.
+4. Yetkili kullanıcı tespit edilirse servo motor kilit mekanizmasını açar.
+5. Yetkisiz erişimlerde sistem kilitli kalır.
 
-Purpose
+### Gömülü Yazılım
 
-Demonstration of embedded systems, RFID authentication, servo control, and smart infrastructure concepts.
+Yazılım **Embedded C/C++** dili kullanılarak geliştirilmiştir.
 
-Authors
+**Özellikler:**
 
-Lead Developer: Yiğit Dağlı (system design, embedded software, hardware integration, 3D modeling)
-Contributor: Tahsin Eren Demir (concept development and presentation)
+* RFID UID doğrulama
+* SPI haberleşmesi
+* PWM servo kontrolü
 
-Türkçe
-Proje Özeti
 
-BU BANK SANA ÖZEL, RFID tabanlı kimlik doğrulama ile çalışan ve akıllı şehir konseptinde öncelikli erişim sağlayan gömülü sistem prototipidir.
+### Amaç
 
-Sistem Mimarisi
-Mikrodenetleyici: Arduino Uno
-Kimlik Doğrulama: MFRC522 RFID Okuyucu (13.56 MHz, SPI)
-Çalıştırma: Mikro servo motor (prototip ölçeği)
-Güç: Filtrelenmiş sabit DC besleme
-Yapı: Blender ile tasarlanmış ve simüle edilmiştir
-Çalışma Prensibi
+Kamusal alanlarda dezavantajlı bireyler için ayrılmış oturma alanlarının RFID tabanlı erişim kontrolü ile korunmasını sağlamak. Sistem, bu alanların yetkisiz kişiler tarafından kullanılmasını önleyerek öncelikli oturma hakkını güvence altına almayı, erişilebilirliği artırmayı ve kapsayıcı akıllı şehir uygulamalarını desteklemeyi amaçlamaktadır.
 
-RFID kart okutulur → UID okunur → Arduino doğrular → yetkiliyse servo çalışır ve kilit açılır → değilse sistem kilitli kalır
+### Geliştiriciler
 
-Gömülü Yazılım
+**Ana Geliştirici**
 
-Embedded C/C++ ile geliştirilmiştir. RFID doğrulama, SPI haberleşme, PWM servo kontrolü, gürültü filtreleme ve güç stabilizasyonu içerir.
+Yiğit Dağlı
 
-Sorunlar
+* Sistem Tasarımı
+* Embedded Yazılım
+* Donanım Entegrasyonu
+* 3D Modelleme
 
-Servo motor çalışırken voltaj düşüşü ve kararsızlık oluştu. Güç dağıtımı iyileştirilerek, kondansatör eklenerek ve yazılım zamanlaması optimize edilerek çözüldü.
+**Katkı Sağlayan**
 
-Amaç
+Tahsin Eren Demir
 
-Gömülü sistemler, RFID doğrulama, servo kontrol ve akıllı altyapı teknolojilerini göstermek.
+* Fikir Geliştirme
+* Sunum Hazırlığı
 
-Yazarlar
+---
 
-Ana geliştirici: Yiğit Dağlı (sistem tasarımı, gömülü yazılım, donanım entegrasyonu, 3D modelleme)
-Katkı: Tahsin Eren Demir (fikir geliştirme ve sunum)
+# 🇷🇺 Русский
 
-Русский
-Описание проекта
+## Описание проекта
 
-BU BANK SANA ÖZEL — это прототип встроенной системы, которая обеспечивает приоритетный доступ в рамках концепции умного города с использованием RFID-аутентификации.
+**BU BANK SANA ÖZEL** — прототип встроенной системы, предназначенный для обеспечения приоритетного доступа к специально выделенным местам для социально уязвимых групп населения с использованием RFID-аутентификации в рамках концепции умного города.
 
-Архитектура системы
-Микроконтроллер: Arduino Uno
-Аутентификация: RFID модуль MFRC522 (13.56 MHz, SPI)
-Привод: микро сервомотор (прототип)
-Питание: стабилизированное DC с фильтрацией
-Конструкция: разработана и смоделирована в Blender
-Принцип работы
+## Архитектура системы
 
-RFID карта сканируется → считывается UID → Arduino проверяет доступ → при разрешении активируется сервомотор → механизм открывается, иначе остаётся закрытым
+* **Микроконтроллер:** Arduino Uno
+* **Аутентификация:** RFID-модуль MFRC522 (13.56 MHz, SPI)
+* **Исполнительный механизм:** микро сервомотор
+* **Питание:** стабилизированное DC-питание с фильтрацией
+* **3D-модель:** Blender
 
-Встроенное ПО
+## Принцип работы
 
-Разработано на C/C++. Включает проверку UID, SPI связь, PWM управление сервомотором, фильтрацию шума и стабилизацию питания.
+1. RFID-карта сканируется.
+2. Считывается UID карты.
+3. Arduino проверяет право доступа.
+4. При успешной аутентификации сервомотор открывает механизм блокировки.
+5. При отсутствии разрешения система остаётся заблокированной.
 
-Проблемы
+## Встроенное программное обеспечение
 
-При работе сервомотора возникали падения напряжения и нестабильность. Проблема решена улучшением питания, добавлением конденсаторов и оптимизацией таймингов.
+Программное обеспечение разработано на языке **Embedded C/C++**.
 
-Цель
+**Возможности:**
 
-Демонстрация RFID систем, встроенной электроники, сервоконтроля и технологий умной инфраструктуры.
+* Проверка UID
+* Обмен данными по SPI
+* PWM-управление сервомотором
 
-Авторы
 
-Главный разработчик: Yiğit Dağlı (система, код, оборудование, 3D моделирование)
-Участник: Tahsin Eren Demir (разработка идеи и презентация)
+
+## Цель
+
+Обеспечить защиту специально выделенных мест для социально уязвимых групп населения в общественных пространствах с помощью RFID-аутентификации. Система предотвращает несанкционированное использование этих мест, обеспечивает приоритетное право на посадку, повышает доступность и поддерживает развитие инклюзивной инфраструктуры умного города.
+
+## Авторы
+
+**Главный разработчик**
+
+Yiğit Dağlı
+
+* Разработка системы
+* Встроенное программное обеспечение
+* Интеграция оборудования
+* 3D-моделирование
+
+**Участник проекта**
+
+Tahsin Eren Demir
+
+* Разработка концепции
+* Подготовка презентации
