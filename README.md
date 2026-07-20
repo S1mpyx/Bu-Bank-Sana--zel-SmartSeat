@@ -55,6 +55,9 @@ Tahsin Eren Demir
 * Fikir Geliştirme
 * Sunum Hazırlığı
 
+Not (Türkçe):
+Bu proje, TÜBİTAK 4006-C İlçe Bilim Fuarı kapsamında geliştirilmiş ve sergilenmiştir. Prototip, gömülü sistemler, RFID tabanlı erişim kontrolü ve erişilebilir akıllı şehir uygulamalarını tanıtmak amacıyla hazırlanmıştır.
+
 ---
 
 # 🇷🇺 Русский
@@ -108,6 +111,9 @@ Yiğit Dağlı
 * 3D-моделирование
 
 **Участник проекта**
+
+Примечание (Русский):
+Данный проект был разработан и представлен в рамках районной научной выставки TÜBİTAK 4006-C. Прототип создан для демонстрации встроенных систем, RFID-аутентификации, управления доступом и технологий доступной инфраструктуры умного города.
 
 Tahsin Eren Demir
 
